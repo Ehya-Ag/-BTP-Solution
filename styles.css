@@ -1,0 +1,455 @@
+:root {
+    --bleu-fonce: #0c2c43;
+    --vert-clair: #d9e5c4;
+    --vert-moyen: #54816d;
+    --vert-pale: #80a470;
+    --vert-fonce: #3d6b63;
+    --bleu-vert: #284f54;
+    --gris-bleu-clair: #8c9ca4;
+    --gris-bleu: #7c8c94;
+    --bleu-gris: #38586c;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.titre{
+    font-size: 32px;
+    font-weight: bold;
+    color: var(--bleu-fonce);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.entete {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: var(--bleu-fonce);
+    color: white;
+}
+
+.entete .logo img {
+    max-height: 50px;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav ul li {
+    margin: 0 10px;
+}
+
+.nav ul li a {
+    color: var(--vert-clair);
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    transition: background 0.3s;
+}
+
+.nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-toggle .barre {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px 0;
+    transition: all 0.3s;
+}
+#contact{
+    background-color: #38586c;
+}
+/*section hero*/
+.hero {
+    background-image: url('images/image-fond.png');
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    height: 80vh;
+    background-size: cover;
+    background-position: center;
+    color: var(--bleu-fonce);
+    text-align: left;
+    padding: 20px;
+    font-size: 30px;
+}
+
+.contenu-hero {
+    max-width: 800px;
+}
+
+.bouton-cta {
+    background-color: var(--bleu-fonce);
+    color: var(--vert-clair);
+    border-radius: 15px;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background 0.3s;
+}
+
+.bouton-cta:hover {
+    background-color: var(--vert-moyen);
+}
+/*Section services*/
+.services {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.services h2 {
+    margin-bottom: 20px;
+}
+
+.cartes-services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.carte-service {
+    background: white;
+    border: 5px solid var(--bleu-fonce);
+    border-radius: 8px;
+    margin: 10px;
+    /* width: calc(33.333% - 40px); */
+    width: 30%;
+    box-sizing: border-box;
+    transition: box-shadow 0.3s;
+}
+
+.carte-service img {
+    max-width: 100%;
+    border-radius: 8px 8px 0 0;
+}
+
+.carte-service h3 {
+    margin: 10px 0;
+}
+
+.carte-service p {
+    font-size: 1.2rem;
+    color: var(--bleu-fonce);
+}
+
+.carte-service:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+/*Section about*/
+.about{
+    background-image: url(images/fond-about1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.contenaire-about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    height: 50vh;
+}
+.about-image img{
+    width: 500px;
+    margin: 30px;
+    border-radius: 15px;
+    box-shadow: 15px #0c2c43;
+}
+.about-text p{
+    color: #0c2c43;
+    font-size: 24px;
+}
+/*Section temoignages*/
+.testimonials {
+    text-align: center;
+    padding: 20px;
+    gap: 79px;
+/*nouveau*/
+    /* gap: 50px;
+    display: flex;
+    flex-direction: column; */
+}
+
+.testimonials h1 {
+    margin-bottom: 20px;
+}
+
+.testimonial {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8px;
+    transition: box-shadow 0.3s;
+}
+
+.testimonial img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    top: -60px;
+    position: relative;
+}
+
+.testimonial h2 {
+    margin: 10px 0;
+}
+
+.testimonial p {
+    font-size: 0.9em;
+    color: #555;
+}
+
+
+
+.testimonial:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+/*Section formulaire*/
+/* .container-contact{
+    display: flex;
+    justify-content: center;
+}
+.formulaire{
+    width: 50%;
+}
+#map{
+    width: 50%;
+}
+#map img{
+    width: 70%;
+    margin-left: 60px;
+    position: relative;
+}
+.contact form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.contact input, .contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact button {
+    background-color: #54816d;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact button:hover {
+    background-color: #80a470;
+}
+
+.contact-info {
+    text-align: center;
+    margin-top: 20px;
+}
+/*Footer
+.pied-de-page {
+    background-color: var(--bleu-fonce);
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.pied-de-page .contenu-pied-de-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.pied-de-page .contenu-pied-de-page > div {
+    margin-bottom: 10px;
+    padding: 0 20px;
+}
+
+.pied-de-page .contenu-pied-de-page > div:not(:last-child) {
+    border-left: 1px solid white;
+}
+
+.pied-de-page .infos-legales,
+.pied-de-page .infos-contact,
+.pied-de-page .liens-sociaux,
+.pied-de-page .horaires-ouverture {
+    text-align: left;
+}
+
+.pied-de-page .infos-legales p,
+.pied-de-page .infos-contact p,
+.pied-de-page .horaires-ouverture p,
+.pied-de-page .liens-sociaux a {
+    margin: 5px 0;
+}
+
+.pied-de-page .liens-sociaux a {
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+.pied-de-page .liens-sociaux a:hover {
+    text-decoration: underline;
+}
+
+@media (min-width: 600px) {
+    .pied-de-page .contenu-pied-de-page {
+        flex-direction: row;
+    }
+
+    .pied-de-page .contenu-pied-de-page > div {
+        margin: 0;
+    }
+} */
+.contactez-nous {
+    background-color: var(--bleu-vert);
+    color: var(--vert-clair);
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.contenu-contact {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.formulaire {
+    background-color: var(--vert-clair);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 45%;
+    width: 100%;
+}
+
+.formulaire h3 {
+    color: var(--bleu-fonce);
+}
+
+.formulaire label {
+    display: block;
+    margin-bottom: 8px;
+    color: var(--bleu-fonce);
+}
+
+.formulaire input,
+.formulaire textarea {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid var(--gris-bleu-clair);
+    border-radius: 4px;
+}
+
+.formulaire button {
+    background-color: var(--bleu-fonce);
+    color: var(--vert-clair);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s;
+    bottom: 10px;
+    position: relative;
+}
+
+.formulaire button:hover {
+    background-color: var(--vert-moyen);
+}
+
+#map iframe{
+    width: 667.34px;
+    height: 362.44px;
+    border-radius: 8px;
+}
+#logo img{
+    width: 50px;
+}
+.pied-de-page {
+    background-color: var(--bleu-fonce);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.pied-de-page .contenu-pied-de-page {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px 0;
+}
+
+.pied-de-page .contenu-pied-de-page > div {
+    flex: 1;
+    padding: 10px;
+}
+
+.pied-de-page .contenu-pied-de-page > div:not(:first-child) {
+    border-left: 1px solid var(--gris-bleu);
+}
+
+.pied-de-page .infos-legales a {
+    color: white;
+    text-decoration: none;
+}
+
+.pied-de-page .infos-legales a:hover {
+    text-decoration: underline;
+}
+
+.pied-de-page .liens-sociaux a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+.pied-de-page .liens-sociaux img {
+    width: 50px;
+}
+
+.pied-de-page .liens-sociaux a:hover {
+    text-decoration: underline;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    background-color: #031624;
+    color: var(--vert-clair);
+}
+
