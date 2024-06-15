@@ -1,5 +1,51 @@
+@media (max-width: 900px){
+    .contenaire-about {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px;
+        /* height: 70vh; */
+        flex-direction: column-reverse;
+        line-height: 1;
+        margin: 0;
+        padding: 5px;
+    }
+    /* .about-text p{
+        font-size: 1.2rem;
+    } */
+    .about-text p{
+        margin-top: 0;
+        color: #0c2c43;
+        font-size: 20px;
+        padding-left: 25px;
+        padding-right: 25px;
+        padding-top: 0;
+    }
+    .testimonials {
+        gap: 50px;
+        display: flex;
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .about-image img{
+        width: 20rem;
+        margin: 30px;
+        border-radius: 15px;
+        box-shadow: 15px #0c2c43;
+    }
+    /*footer*/
+    .pied-de-page .contenu-pied-de-page > div:not(:last-child) {
+        border-bottom: 1px solid var(--gris-bleu);
+    }
+    .pied-de-page .contenu-pied-de-page > div:not(:first-child) {
+        border-left: none;
+    }
+}
 /*Menu*/
 @media (max-width: 768px) {
+
     .menu-toggle {
         display: flex;
     }
@@ -47,12 +93,14 @@
         align-items: center;
     }
 
-    .formulaire,
-    #map {
+    .formulaire {
         max-width: 100%;
         margin: 10px 0;
     }
-
+    #map iframe {
+        max-width: 70%;
+        margin:0;
+    }
     .pied-de-page .contenu-pied-de-page {
         flex-direction: column;
         align-items: center;
@@ -109,24 +157,27 @@
 
     .cartes-services {
         flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .carte-service {
-        width: calc(100% - 40px);
+        width: calc(100% - 100px);;
     }
     /*temoignage*/
 @media (min-width: 600px) {
-    .testimonials {
+    /* .testimonials {
         text-align: center;
         padding: 20px;
-        /* gap: 79px; */
+        /* gap: 79px; 
         display: flex;
         flex-direction: column;
         gap: 50px;
     }
     .testimonial {
         width: calc(33.333% - 40px);
-    }
+    } */
 }
 
 }

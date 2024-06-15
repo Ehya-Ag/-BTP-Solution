@@ -181,10 +181,16 @@ body {
     text-align: center;
     padding: 20px;
     gap: 79px;
+    display: flex;
 /*nouveau*/
     /* gap: 50px;
     display: flex;
     flex-direction: column; */
+}
+.testimonials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .testimonials h1 {
@@ -194,6 +200,7 @@ body {
 .testimonial {
     display: flex;
     flex-direction: column;
+    width: 300px;
     align-items: center;
     border: 1px solid #ddd;
     padding: 20px;
@@ -352,10 +359,10 @@ body {
 }
 
 .formulaire {
-    background-color: var(--vert-clair);
+    background-color: white;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    max-width: 45%;
+    max-width: 100%;
     width: 100%;
 }
 
@@ -396,6 +403,7 @@ body {
 
 #map iframe{
     width: 667.34px;
+    max-width: 100%;
     height: 362.44px;
     border-radius: 8px;
 }
