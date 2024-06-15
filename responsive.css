@@ -35,6 +35,13 @@
         border-radius: 15px;
         box-shadow: 15px #0c2c43;
     }
+    /*Contact*/
+    .formulaire label {
+        display: flex;
+        justify-content: flex-start;
+        margin-left: 10px;
+        color: var(--bleu-fonce);
+    }
     /*footer*/
     .pied-de-page .contenu-pied-de-page > div:not(:last-child) {
         border-bottom: 1px solid var(--gris-bleu);
