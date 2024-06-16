@@ -8,6 +8,7 @@
     --gris-bleu-clair: #8c9ca4;
     --gris-bleu: #7c8c94;
     --bleu-gris: #38586c;
+    --bleu-clair: #2B3136;
 }
 
 body {
@@ -20,6 +21,7 @@ body {
     font-size: 32px;
     font-weight: bold;
     color: var(--bleu-fonce);
+    border-bottom: 5px solid var(--bleu-fonce);
     display: flex;
     justify-content: center;
     text-align: center;
@@ -34,12 +36,13 @@ body {
 }
 
 .entete .logo img {
-    max-height: 50px;
+    max-height: 60px;
 }
 
 .nav ul {
     list-style: none;
     display: flex;
+    font-size: 20px;
     margin: 0;
     padding: 0;
 }
@@ -149,7 +152,6 @@ body {
     font-size: 1.2rem;
     color: var(--bleu-fonce);
 }
-
 .carte-service:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -161,10 +163,9 @@ body {
 }
 .contenaire-about{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     margin: 20px;
-    height: 50vh;
 }
 .about-image img{
     width: 500px;
@@ -177,7 +178,7 @@ body {
     font-size: 24px;
 }
 /*Section temoignages*/
-.testimonials {
+.temoignages {
     text-align: center;
     padding: 20px;
     gap: 79px;
@@ -187,17 +188,17 @@ body {
     display: flex;
     flex-direction: column; */
 }
-.testimonials {
+.temoignages {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.testimonials h1 {
+.temoignages h1 {
     margin-bottom: 20px;
 }
 
-.testimonial {
+.temoignage {
     display: flex;
     flex-direction: column;
     width: 300px;
@@ -209,7 +210,7 @@ body {
     transition: box-shadow 0.3s;
 }
 
-.testimonial img {
+.temoignage img {
     width: 100px;
     height: 100px;
     border-radius: 50%;
@@ -218,139 +219,32 @@ body {
     position: relative;
 }
 
-.testimonial h2 {
+.temoignage h2 {
     margin: 10px 0;
 }
 
-.testimonial p {
+.temoignage p {
     font-size: 0.9em;
     color: #555;
 }
 
 
 
-.testimonial:hover {
+.temoignage:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 /*Section formulaire*/
-/* .container-contact{
-    display: flex;
-    justify-content: center;
-}
-.formulaire{
-    width: 50%;
-}
-#map{
-    width: 50%;
-}
-#map img{
-    width: 70%;
-    margin-left: 60px;
-    position: relative;
-}
-.contact form {
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-.contact label {
-    display: block;
-    margin-bottom: 5px;
-}
-
-.contact input, .contact textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-.contact button {
-    background-color: #54816d;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.contact button:hover {
-    background-color: #80a470;
-}
-
-.contact-info {
-    text-align: center;
-    margin-top: 20px;
-}
-/*Footer
-.pied-de-page {
-    background-color: var(--bleu-fonce);
-    color: white;
-    padding: 20px 0;
-    text-align: center;
-}
-
-.pied-de-page .contenu-pied-de-page {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-.pied-de-page .contenu-pied-de-page > div {
-    margin-bottom: 10px;
-    padding: 0 20px;
-}
-
-.pied-de-page .contenu-pied-de-page > div:not(:last-child) {
-    border-left: 1px solid white;
-}
-
-.pied-de-page .infos-legales,
-.pied-de-page .infos-contact,
-.pied-de-page .liens-sociaux,
-.pied-de-page .horaires-ouverture {
-    text-align: left;
-}
-
-.pied-de-page .infos-legales p,
-.pied-de-page .infos-contact p,
-.pied-de-page .horaires-ouverture p,
-.pied-de-page .liens-sociaux a {
-    margin: 5px 0;
-}
-
-.pied-de-page .liens-sociaux a {
-    color: white;
-    text-decoration: none;
-    display: block;
-}
-
-.pied-de-page .liens-sociaux a:hover {
-    text-decoration: underline;
-}
-
-@media (min-width: 600px) {
-    .pied-de-page .contenu-pied-de-page {
-        flex-direction: row;
-    }
-
-    .pied-de-page .contenu-pied-de-page > div {
-        margin: 0;
-    }
-} */
 .contactez-nous {
-    background-color: var(--bleu-vert);
+    background-color: var(--bleu-clair);
     color: var(--vert-clair);
     padding: 40px 20px;
     text-align: center;
 }
-
+.infos-contact {
+    font-weight: bold;
+    border: solid 3px;
+    border-radius: 10px;
+}
 .contenu-contact {
     display: flex;
     justify-content: space-around;
@@ -373,7 +267,7 @@ body {
 .formulaire label {
     display: flex;
     justify-content: flex-start;
-    margin-left: 26px;
+    margin-left: 30px;
     margin-bottom: 8px;
     color: var(--bleu-fonce);
 }
