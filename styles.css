@@ -17,14 +17,6 @@ body {
     padding: 0;
     box-sizing: border-box;
 }
-.titreA{
-    font-size: 32px;
-    font-weight: bold;
-    color: white;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-}
 .titre{
     font-size: 32px;
     font-weight: bold;
