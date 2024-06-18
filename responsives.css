@@ -68,7 +68,7 @@
     .about-text p {
         color: #0c2c43;
         font-size: 20px;
-        text-align: justify;
+        text-align: left;
     }
     .about-image img {
         width: 100%;
@@ -100,6 +100,9 @@
     .temoignages {
         flex-direction: column;
         gap: 20px;
+    }
+    .temoignage {
+        width: 70%;
     }
     .formulaire {
         width: 100%;
@@ -150,6 +153,9 @@
     .temoignages {
         flex-direction: column;
         gap: 20px;
+    }
+    .temoignage {
+        width: 70%;
     }
     .formulaire {
         width: 80%;

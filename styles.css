@@ -17,11 +17,18 @@ body {
     padding: 0;
     box-sizing: border-box;
 }
+.titreA{
+    font-size: 32px;
+    font-weight: bold;
+    color: white;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
 .titre{
     font-size: 32px;
     font-weight: bold;
     color: var(--bleu-fonce);
-    border-bottom: 5px solid var(--bleu-fonce);
     display: flex;
     justify-content: center;
     text-align: center;
@@ -52,8 +59,7 @@ body {
 }
 
 .nav ul li a {
-    color: var(--vert-clair);
-    font-weight: bold;
+    color: white;
     text-decoration: none;
     padding: 10px 20px;
     border-radius: 4px;
@@ -114,7 +120,7 @@ body {
 }
 /*Section services*/
 .services {
-    padding: 40px 20px;
+    /* padding: 40px 20px; */
     text-align: center;
 }
 
@@ -130,7 +136,8 @@ body {
 
 .carte-service {
     background: white;
-    border: 5px solid var(--bleu-fonce);
+    /* border: 5px solid var(--bleu-fonce); */
+    box-shadow: 0 0 20px rgba(0, 10, 0, 0.1);
     border-radius: 8px;
     margin: 10px;
     /* width: calc(33.333% - 40px); */
@@ -160,12 +167,15 @@ body {
     background-image: url(images/fond-about1.png);
     background-repeat: no-repeat;
     background-size: cover;
+    margin: 20px;
+    border-radius: 35px;
 }
 .contenaire-about{
     display: flex;
     justify-content: space-around;
     align-items: center;
     margin: 20px;
+    padding: 40px 20px;
 }
 .about-image img{
     width: 500px;
@@ -181,7 +191,7 @@ body {
 .temoignages {
     text-align: center;
     padding: 20px;
-    gap: 79px;
+    /* gap: 79px; */
     display: flex;
 /*nouveau*/
     /* gap: 50px;
@@ -199,7 +209,7 @@ body {
 }
 
 .temoignage {
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     width: 300px;
     align-items: center;
@@ -207,7 +217,15 @@ body {
     padding: 20px;
     margin: 10px;
     border-radius: 8px;
+    transition: box-shadow 0.3s; */
+    background: white;
+    box-shadow: 0 0 20px rgba(0, 10, 0, 0.1);
+    border-radius: 8px;
+    margin: 10px;
+    width: 25%;
+    box-sizing: border-box;
     transition: box-shadow 0.3s;
+
 }
 
 .temoignage img {
@@ -215,7 +233,7 @@ body {
     height: 100px;
     border-radius: 50%;
     margin-bottom: 10px;
-    top: -60px;
+    top: -35px;
     position: relative;
 }
 
@@ -224,7 +242,7 @@ body {
 }
 
 .temoignage p {
-    font-size: 0.9em;
+    font-size: 1.2em;
     color: #555;
 }
 
@@ -235,11 +253,18 @@ body {
 }
 /*Section formulaire*/
 .contactez-nous {
-    background-color: var(--bleu-clair);
-    color: var(--vert-clair);
+    /* background-color: var(--bleu-clair); */
+    color: var(--bleu-fonce);
     padding: 40px 20px;
     text-align: center;
+    margin: 20px;
+    border-radius: 35px;
+    box-shadow: 0px -20px 1px 10px var(--bleu-fonce);
+    border-bottom: 15px solid var(--bleu-fonce);
 }
+/* .contactez-nous{
+    box-shadow: -20px 20px 0px 20px var(--bleu-gris  );
+} */
 .infos-contact {
     font-weight: bold;
     border: solid 3px;
@@ -283,19 +308,30 @@ body {
 
 .formulaire button {
     background-color: var(--bleu-fonce);
-    color: var(--vert-clair);
+    color: white;
     padding: 10px 20px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
     transition: background 0.3s;
     bottom: 10px;
+    position: relative; 
+    /* border-radius: 5px;
+    box-shadow: 0 0 2px 0;
+    max-width: 100px;
+    width: 100px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background 0.3s;
+    transition: background 0.3s;
+    bottom: 10px;
     position: relative;
+    background: none; */
 }
 
-.formulaire button:hover {
+/* .formulaire button:hover {
     background-color: var(--vert-moyen);
-}
+} */
 
 #map iframe{
     width: 667.34px;
@@ -307,8 +343,8 @@ body {
     width: 50px;
 }
 .pied-de-page {
-    background-color: var(--bleu-fonce);
-    color: white;
+    background-color: rgba(14, 13, 13, 0.897) ;
+    color: white;   
     padding: 20px;
     text-align: center;
 }
@@ -353,7 +389,7 @@ body {
 footer{
     display: flex;
     justify-content: center;
-    background-color: #031624;
+    background-color: black;
     color: var(--vert-clair);
 }
 
