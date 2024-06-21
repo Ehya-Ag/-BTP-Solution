@@ -382,6 +382,6 @@ footer{
     display: flex;
     justify-content: center;
     background-color: black;
-    color: var(--vert-clair);
+    color: white;
 }
 
