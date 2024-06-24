@@ -75,16 +75,15 @@ body {
     margin: 4px 0;
     transition: all 0.3s;
 }
-#contact{
+/* #contact{
     background-color: #38586c;
-}
+} */
 /*section hero*/
 .hero {
     background-image: url('imagewebp/image-fond.webp');
     display: flex;
     align-items: center;
     justify-content: left;
-    width: 100%;
     height: 80vh;
     background-size: cover;
     background-position: center;
@@ -100,7 +99,7 @@ body {
 
 .bouton-cta {
     background-color: var(--bleu-fonce);
-    color: var(--vert-clair);
+    color: white;
     border-radius: 15px;
     padding: 10px 20px;
     text-decoration: none;
@@ -118,7 +117,10 @@ body {
 }
 
 .services h2 {
-    margin-bottom: 20px;
+    margin: 50px;
+    font-size: 1.3rem;
+    margin-top: 0;
+    text-align: left;
 }
 
 .cartes-services {
@@ -151,6 +153,8 @@ body {
 .carte-service p {
     font-size: 1.2rem;
     color: var(--bleu-fonce);
+    text-align: left;
+    margin: 50px;
 }
 .carte-service:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -231,12 +235,16 @@ body {
 }
 
 .temoignage h2 {
-    margin: 10px 0;
+    margin: 50px;
+    margin-top: 0;
+    text-align: left;
 }
 
 .temoignage p {
     font-size: 1.2em;
     color: #555;
+    text-align: left;
+    margin: 50px;
 }
 
 
