@@ -80,7 +80,7 @@ body {
 }
 /*section hero*/
 .hero {
-    background-image: url('images/image-fond.png');
+    background-image: url('imagewebp/image-fond.webp');
     display: flex;
     align-items: center;
     justify-content: left;
@@ -156,7 +156,7 @@ body {
 }
 /*Section about*/
 .about{
-    background-image: url(images/fond-about1.png);
+    background-image: url(imagewebp/fond-about1.webp);
     background-repeat: no-repeat;
     background-size: cover;
     margin: 20px;
