@@ -53,6 +53,19 @@
 .contenu-hero h2{
     font-size: 1.5rem;
 }
+/**/
+.temoignage p{
+    margin: 25px;
+  }
+  .carte-service p{
+    margin: 25px;
+  }
+  .temoignage h2{
+    margin: 25px;
+  }
+  .carte-service h2{
+    margin: 25px;
+  }
     } 
 /* Style pour les smartphones (petits écrans) */
 @media (max-width: 600px) {
