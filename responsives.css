@@ -47,6 +47,12 @@
 .about-image img{
     width: 300px;
 }
+.contenu-hero h1{
+    font-size: 1.8rem;
+}
+.contenu-hero h2{
+    font-size: 1.5rem;
+}
     } 
 /* Style pour les smartphones (petits écrans) */
 @media (max-width: 600px) {
