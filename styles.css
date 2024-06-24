@@ -96,12 +96,7 @@ body {
 .contenu-hero {
     max-width: 800px;
 }
-.contenu-hero h1{
-    font-size: 1.8rem;
-}
-.contenu-hero h2{
-    font-size: 1.5rem;
-}
+
 
 .bouton-cta {
     background-color: var(--bleu-fonce);
