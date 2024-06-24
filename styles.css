@@ -84,7 +84,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: left;
-    height: 50vh;
+    height: 80vh;
     background-size: cover;
     background-position: center;
     color: var(--bleu-fonce);

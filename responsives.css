@@ -40,7 +40,13 @@
     .menu-toggle.ouvert .barre:nth-child(3) {
         transform: rotate(-45deg) translate(5px, -5px);
     }
-
+/*hero*/
+.hero {
+    height: 50%;
+}
+.about-image img{
+    width: 300px;
+}
     } 
 /* Style pour les smartphones (petits écrans) */
 @media (max-width: 600px) {
