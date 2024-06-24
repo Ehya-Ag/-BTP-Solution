@@ -84,7 +84,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: left;
-    height: 80vh;
+    height: 100%;
     background-size: cover;
     background-position: center;
     color: var(--bleu-fonce);
@@ -157,6 +157,7 @@ body {
 /*Section about*/
 .about{
     background-image: url(imagewebp/fond-about1.webp);
+    height: 100%;
     background-repeat: no-repeat;
     background-size: cover;
     margin: 20px;
