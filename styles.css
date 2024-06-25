@@ -256,12 +256,19 @@ body {
 /*Section formulaire*/
 .contactez-nous {
     /* background-color: var(--bleu-clair); */
-    color: var(--bleu-fonce);
+    /* color: var(--bleu-fonce);
     padding: 40px 20px;
     text-align: center;
     margin: 20px;
     border-radius: 35px;
     box-shadow: 0px -20px 1px 10px var(--bleu-fonce);
+    border-bottom: 15px solid var(--bleu-fonce); */
+    color: var(--bleu-fonce);
+    padding: 40px 20px;
+    text-align: center;
+    margin: 41px;
+    border-radius: 35px;
+    box-shadow: 0px -26px 0px 20px var(--bleu-fonce);
     border-bottom: 15px solid var(--bleu-fonce);
 }
 /* .contactez-nous{
@@ -271,6 +278,8 @@ body {
     font-weight: bold;
     border: solid 3px;
     border-radius: 10px;
+    top: 20px;
+    position: relative;
 }
 .contenu-contact {
     display: flex;
@@ -283,7 +292,7 @@ body {
 .formulaire {
     background-color: white;
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 12px rgb(0 0 0);
     width: 50%;
 }
 
@@ -310,7 +319,9 @@ body {
 .formulaire textarea {
     height: 20%;
 }
-
+#message{
+    height: 100px;
+}
 .formulaire button {
     background-color: var(--bleu-fonce);
     color: white;
