@@ -184,7 +184,7 @@ body {
     background-image: url(imagewebp/fond-about1.webp);
     background-repeat: no-repeat;
     background-size: cover;
-    margin: 20px;
+    margin: 50px;
     border-radius: 35px;
 }
 .contenaire-about{
@@ -283,10 +283,10 @@ body {
     box-shadow: 0px -20px 1px 10px var(--bleu-fonce);
     border-bottom: 15px solid var(--bleu-fonce); */
     color: var(--bleu-fonce);
-    padding: 40px 20px;
+    padding: 45px 30px;
     text-align: center;
-    margin: 41px;
-    border-radius: 35px;
+    margin: 60px;
+    border-radius: 25px;
     box-shadow: 0px -26px 0px 20px var(--bleu-fonce);
     border-bottom: 15px solid var(--bleu-fonce);
 }
@@ -310,7 +310,7 @@ body {
 
 .formulaire {
     background-color: white;
-    border-radius: 8px;
+    border-radius: 25px;
     box-shadow: 0 2px 12px rgb(0 0 0);
     width: 50%;
 }
@@ -322,7 +322,7 @@ body {
 .formulaire label {
     display: flex;
     justify-content: flex-start;
-    margin-left: 30px;
+    margin-left: 20px;
     margin-bottom: 8px;
     color: var(--bleu-fonce);
 }
@@ -331,6 +331,7 @@ body {
 .formulaire textarea {
     width: 90%;
     padding: 10px;
+    height: 33px;
     margin-bottom: 20px;
     border: 1px solid var(--gris-bleu-clair);
     border-radius: 4px;
@@ -369,7 +370,7 @@ body {
 } */
 
 #map iframe{
-    width: 667.34px;
+    width: 700.34px;
     max-width: 100%;
     height: 362.44px;
     border-radius: 8px;
